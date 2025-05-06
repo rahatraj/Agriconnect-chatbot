@@ -1,0 +1,192 @@
+#  AgriConnect Application Documentation
+
+## 1. Overview
+AgriConnect is a web-based platform designed to:
+
+- Enable farmers to sell produce via live bidding or book cold storage.
+- Allow buyers to bid and pay using integrated wallets.
+- Empower storage owners to list cold storage services and receive payments.
+- Ensure transparent, efficient, and seamless wallet-based transactions.
+
+---
+
+## 2. Roles and Responsibilities
+
+###  Farmer
+- List Products: Provide name, description, quantity, base price, and images.
+- Cold Storage: Book storage for unsold items.
+- Payments: Receive bid winnings directly into the wallet.
+- History Access: View sold products, wallet transactions, and bookings.
+
+###  Buyer
+- Add Funds: Top up wallet via external payment.
+- Live Bidding: Place bids on products.
+- Refunds: Auto refund for outbid amounts.
+- History Access: View purchases and wallet transactions.
+
+###  Storage Owner
+- List Storage: Set capacity, location, price per kg.
+- Receive Payments: From farmers through the platform.
+- Payouts: Request or receive scheduled payouts.
+- **Manage Bookings**: View and update booking details.
+
+###  Admin
+- User Verification: Approve/deny farmers, buyers, and storage owners.
+- Bidding Oversight: Monitor or intervene in bidding.
+- Wallet Monitoring: Oversee the company wallet.
+- Process Payouts: Transfer funds to farmers and storage owners.
+
+---
+
+## 3. Core Features
+
+###  Product Listing & Bidding
+- Listing: Farmers list product details and images.
+- Bidding:
+  - Buyer's wallet is debited during bid.
+  - Refunds processed for outbid users.
+  - Highest bidder wins after bidding closes.
+- Payout: Winning bid amount transferred to farmer's wallet.
+
+###  Wallet & Transactions
+- Wallet System:
+  - Used by all roles for internal transactions.
+  - External operations for adding/withdrawing funds.
+- Transaction Types:
+  - External: Top-up & withdrawal.
+  - Internal: Bid payment, refund, storage fee.
+
+###  Cold Storage Management
+- For Farmers:
+  - Book storage with wallet payment.
+- For Storage Owners:
+  - List available spaces.
+  - Manage bookings and receive payments.
+  - Admin-approved payouts.
+
+###  Admin Features
+- **User Verification**: Document checks.
+- **Wallet Management**: Oversee internal/external flows.
+- **Transaction Oversight**:
+  - Refunds, bid transfers, and payout approvals.
+
+---
+
+## 4. Application Workflow (Step-by-Step)
+
+1. **Registration**: Users sign up → Submit docs → Admin approval.
+2. **Product Listing**: Farmer adds product → Available for bidding.
+3. **Bidding**:
+   - Buyer adds money → Places bid.
+   - Wallet is debited → Refunds if outbid.
+4. **Closing Bid**:
+   - Admin/farmer closes → Last bidder wins → Farmer is paid.
+5. **Cold Storage**:
+   - Farmer books → Payment deducted.
+   - Storage owner receives and manages bookings.
+6. **Payouts**:
+   - Admin processes payouts to farmers & storage owners.
+
+---
+
+## 5. Technology Stack
+
+| Component  | Technology          |
+|-----------|----------------------|
+| Frontend  | React.js             |
+| Backend   | Node.js + Express.js |
+| Database  | MongoDB              |
+| Payments  | Razorpay / Stripe    |
+
+---
+
+## 6. User Benefits
+
+| User           | Benefits                                                    |
+|----------------|-------------------------------------------------------------|
+| **Farmers**     | Transparent bidding, access to storage, instant wallet payments. |
+| **Buyers**      | Competitive prices, seamless payments, detailed product listings. |
+| **Storage Owners** | Direct farmer access, simple wallet payments, booking management. |
+
+---
+
+## 7. Key Takeaways
+
+ **Efficient Marketplace**: Connects farmers and buyers directly.  
+ **Transparency**: Logs all transactions and bids for accountability.  
+**Scalability**: Room for future enhancements (delivery tracking, crop quality).
+
+#  AgriConnect Chatbot Assistant Questions
+## FAQs (for LLM Use)
+##  General / Onboarding
+- How do I register as a farmer/buyer/storage owner?
+- What documents are required for verification?
+- How long does it take for admin approval?
+- Can I change my role after registration?
+
+---
+
+##  Farmer FAQs
+- How do I list a new product for bidding?
+- Can I update product details after listing?
+- Where can I see my bid history?
+- How is the winning bid transferred to my wallet?
+- How do I book cold storage for unsold products?
+- How can I view my storage bookings and payments?
+
+---
+
+##  Buyer FAQs
+- How do I add money to my wallet?
+- Why was my wallet debited when I placed a bid?
+- What happens if I get outbid?
+- How do I know if I’ve won a bid?
+- Where can I check my purchase and transaction history?
+- Can I withdraw unused wallet funds?
+
+---
+
+##  Storage Owner FAQs
+- How do I list a new storage facility?
+- Can I update capacity or pricing later?
+- How do I view and manage incoming bookings?
+- How do I request a payout from the admin?
+- Where can I check my payment and booking history?
+
+---
+
+##  Admin FAQs
+- How do I verify new user accounts?
+- Where can I monitor active bidding processes?
+- How are outbid refunds processed?
+- How do I view and manage the company wallet?
+- What’s the process to approve payouts?
+
+---
+
+##  Wallet & Payments
+- How do internal and external transactions work?
+- What payment gateway is used?
+- Is there a minimum or maximum wallet top-up limit?
+- Are transaction logs available to users?
+- How secure are wallet and payment operations?
+
+---
+
+## App Features / Technical Help
+- How does live bidding work?
+- Can I cancel a bid after placing it?
+- Can farmers close the bidding manually?
+- What if two buyers place the same bid?
+- Is there a notification system for new bids or bookings?
+
+---
+
+##  UI/UX Navigation Prompts
+- Show me my wallet balance.
+- List my active bids.
+- Display storage facilities near me.
+- Check status of my storage booking.
+- Help me top up my wallet.
+
+(All of these can be answered from the content above.)

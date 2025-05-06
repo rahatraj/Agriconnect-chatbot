@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Environment variable files
+.env
+.env/
+
+# VSCode settings
+.vscode/
+
+# Python egg info and build artifacts
+*.egg-info/
+dist/
+build/
+
+# Pydantic or testing cache
+*.mypy_cache/
+*.pytest_cache/
+
+# SQLite or other development databases
+*.db
+
+# Logs
+*.log
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/

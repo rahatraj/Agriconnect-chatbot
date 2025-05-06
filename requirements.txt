@@ -1,0 +1,11 @@
+fastapi
+langchain
+langchain-core
+langchain-google-genai
+google-cloud-aiplatform
+openai 
+langchain-community
+langgraph 
+langsmith
+uvicorn 
+python-dotenv
