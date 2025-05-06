@@ -8,7 +8,7 @@ app = FastAPI()
 # CORS (so frontend like React can access it)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or list your frontend URL
+    allow_origins=["https://agriconnect-bid.netlify.app","http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
